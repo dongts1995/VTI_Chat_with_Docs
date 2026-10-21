@@ -23,3 +23,10 @@ Thumbs.db
 
 # Claude Code local settings
 .claude/settings.local.json
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Spike: file mẫu sinh lại được
+spikes/pdf-extraction/samples/
