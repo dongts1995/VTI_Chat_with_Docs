@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Chat với tài liệu</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header><h1>Chat với tài liệu <span class="tag">MVP</span></h1></header>
+
+  <main class="layout">
+    <section class="panel" aria-labelledby="docs-title">
+      <h2 id="docs-title">Kho tài liệu</h2>
+      <label class="upload">
+        <span>Chọn file PDF (tối đa 50 MB mỗi file)</span>
+        <input id="file-input" type="file" accept="application/pdf,.pdf" multiple>
+      </label>
+      <ul id="doc-list" class="doc-list" aria-live="polite"></ul>
+    </section>
+
+    <section class="panel chat" aria-labelledby="chat-title">
+      <h2 id="chat-title">Hỏi đáp</h2>
+      <div id="messages" class="messages" aria-live="polite"></div>
+      <form id="ask-form" class="ask">
+        <textarea id="question" rows="2" maxlength="2000" placeholder="Nhập câu hỏi bằng tiếng Việt hoặc tiếng Anh"></textarea>
+        <button id="ask-btn" type="submit" disabled>Gửi</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="/static/app.js"></script>
+</body>
+</html>
